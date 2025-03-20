@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BetaForAll</string>
+    <string name="title_activity_program">Program</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="item_texts1">
+        <item>Первый элемент</item>
+        <item>Второй элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+    </string-array>
+    <string-array name="item_texts2">
+        <item>Электронное ОСАГО</item>
+        <item>Автострахование Каско</item>
+        <item>Страхование дял туристов</item>
+        <item>Страхование ипотеки</item>
+        <item>Страхование квартиры</item>
+        <item>Страхование от несчастных случаев</item>
+    </string-array>
+    <string-array name="item_texts3">
+        <item>Первый элемент</item>
+        <item>Второй элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+        <item>Третий элемент</item>
+    </string-array>
+</resources>

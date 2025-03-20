@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:padding="16dp">
+
+    <!-- Заголовок категории -->
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Страховые выплаты за 2 дня"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:paddingBottom="8dp"/>
+
+    <!-- Основное название -->
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Электронное ОСАГО"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/category_title"/>
+
+    <!-- Описание -->
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Страхование без осмотра автомобиля и похода в офис. Скидки (КБМ) на полис ОСАГО за безаварийную езду."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingBottom="8dp"
+        android:layout_below="@id/item_title"/>
+
+    <!-- Контейнер для изображения -->
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/item_description"
+        android:layout_marginTop="8dp">
+
+        <!-- Изображение (машина) -->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dall_e_2025_03_10_12_36_23___a_3d_visualization_of_an_anonymous_family_car_styled_as_a_solid_opaque_glass_figurine__the_car_s_body_has_smooth_lines__increased_interior_space__and_"
+            android:layout_centerInParent="true"/>
+
+        <!-- Лого (иконка) в верхнем правом углу -->
+        <ImageView
+            android:id="@+id/icon_badge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/___"
+            android:layout_marginStart="30dp"
+            android:padding="4dp"/>
+
+        <!-- Кнопка поверх изображения -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Рассчитать стоимость"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <!-- Текст электронной почты -->
+            <TextView
+                android:id="@+id/textViewEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/neutral_light"
+                android:text="Электронная почта"
+                android:textStyle="bold" />
+
+            <!-- Пустое пространство -->
+            <View
+                android:id="@+id/spaceView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <!-- Кнопка выйти из аккаунта -->
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn"
+                android:text="Выйти из аккаунта" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <!-- Фамилия -->
+            <TextView
+                android:id="@+id/textViewLastNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_light"
+                android:layout_marginTop="5dp"
+                android:text="Фамилия"
+                android:textStyle="bold" />
+
+            <!-- TextView для фамилии, по умолчанию показываем -->
+            <TextView
+                android:id="@+id/textViewLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фамилия"
+                android:textSize="24dp"
+                android:textColor="@color/neutral_light"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/neutral_light"
+                android:background="@drawable/edt"
+                android:visibility="gone" />
+
+            <!-- Имя -->
+            <TextView
+                android:id="@+id/textViewFirstNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Имя"
+                android:textColor="@color/neutral_light"
+                android:textStyle="bold" />
+
+            <!-- TextView для имени, по умолчанию показываем -->
+            <TextView
+                android:id="@+id/textViewFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_light"
+                android:textSize="24dp"
+                android:text="Имя"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/neutral_light"
+                android:background="@drawable/edt"
+                android:visibility="gone" />
+
+            <!-- Отчество -->
+            <TextView
+                android:id="@+id/textViewMiddleNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_light"
+                android:layout_marginTop="5dp"
+                android:text="Отчество"
+                android:textStyle="bold" />
+
+            <!-- TextView для отчества, по умолчанию показываем -->
+            <TextView
+                android:id="@+id/textViewMiddleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_light"
+                android:textSize="24dp"
+                android:text="Отчество"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextMiddleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/neutral_light"
+                android:background="@drawable/edt"
+                android:visibility="gone" />
+
+            <!-- Дата рождения -->
+            <TextView
+                android:id="@+id/textViewDateOfBirthLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/neutral_light"
+                android:text="Дата рождения"
+                android:textStyle="bold" />
+
+            <!-- TextView для даты рождения, по умолчанию показываем -->
+            <TextView
+                android:id="@+id/textViewDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neutral_light"
+                android:textSize="24dp"
+                android:text="Дата рождения"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/neutral_light"
+                android:background="@drawable/edt"
+                android:visibility="gone" />
+
+            <!-- Кнопка сохранить -->
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn"
+                android:text="Сохранить данные" />
+
+            <!-- Кнопка обновить -->
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                android:text="Изменить данные" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

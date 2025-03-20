@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/_0469887_document_policy_safety_confidential_insurance_icon"
+        android:title="страховка" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/_213460_account_avatar_head_person_profile_user_115386"
+        android:title="личный кабинет" />
+
+
+</menu>
