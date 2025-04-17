@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.betaforall.R;
 
-public class HomeInsuranceActivity extends AppCompatActivity {
+public class  HomeInsuranceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

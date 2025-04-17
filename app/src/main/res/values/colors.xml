@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#FF7033</color>
-    <color name="background">#006B99</color>
+    <color name="background">#F5F5F5</color>
 
     <!-- Оттенки активного цвета -->
     <color name="primary_light">#FF8A54</color>
@@ -16,6 +16,7 @@
     <!-- Нейтральные цвета -->
     <color name="neutral_light">#F5F5F5</color>
     <color name="neutral_dark">#1A1A1A</color>
+    <color name="step_default">#BDC3C7</color> <!-- Light gray color -->
 
     <!-- Акцентные цвета -->
     <color name="success">#4CAF50</color>

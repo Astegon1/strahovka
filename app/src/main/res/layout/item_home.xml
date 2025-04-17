@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/item_background"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <!-- Заголовок категории -->
+
+    <!-- Основное название -->
     <TextView
         android:id="@+id/category_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:text="Страховые выплаты за 2 дня"
-        android:textSize="12sp"
         android:textColor="#999999"
-        android:paddingBottom="8dp"/>
+        android:textSize="12sp" />
 
-    <!-- Основное название -->
     <TextView
         android:id="@+id/item_title"
         android:layout_width="wrap_content"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Электронное ОСАГО"
@@ -35,6 +40,8 @@
         android:layout_height="wrap_content"
         android:text="Страхование без осмотра автомобиля и похода в офис. Скидки (КБМ) на полис ОСАГО за безаварийную езду."
         android:textSize="14sp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:textColor="#666666"
         android:paddingBottom="8dp"
         android:layout_below="@id/item_title"/>
@@ -79,4 +86,4 @@
             android:layout_marginBottom="10dp"/>
     </RelativeLayout>
 
-</RelativeLayout>
+</LinearLayout>
